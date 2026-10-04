@@ -1,29 +1,24 @@
-//نظام اداره مكتبه
-void main() {
+# المقر
 
-var BOOK=Library();
-BOOK.book();
-print("------");
-BOOK.titlebook="يوتوبيا";
-BOOK.author="احمد خالد توفبق";
-BOOK.bookstorename="shorock store";
-BOOK.isbn="9770933074";
-print("book is available");
-print("book is name ${BOOK.titlebook}");
-print("name author ${BOOK.author}");
-print("name bookstorename ${BOOK.bookstorename}");
-print("isbn is ${BOOK.isbn}");
+مقر رقمي للشركات الصغيرة. مكان واحد للفريق، والمشاريع، والمهام، والحضور، والمالية الأساسية.
 
+الواجهة عربية ومن اليمين إلى اليسار. الصفحة الأولى تفتح بثلاث طرق: زائر يعاين المقر، موظف يدخل عمله، وصاحب عمل يؤسس الشركة.
 
-}
-class Library {
-  String titlebook ="";
-  String author="";
-  String bookstorename ="";
-  dynamic isbn ="";
+## التشغيل
 
- void book() {
-print ("${this.titlebook} copies available");
-  }
-}
+```bash
+npm install
+npm run dev
+```
 
+التطبيق يعمل على [http://localhost:3000](http://localhost:3000). البيانات تُحفظ محليًا في `data/maqr.sqlite`.
+
+## ما يغطيه الإصدار الأول
+
+- حساب، وشركة، وأقسام، وأدوار: مالك، مدير نظام، مدير، موظف.
+- مقر من عشر غرف، والناس تظهر في غرفة قسمهم.
+- مشاريع، مهام، تعليقات، ومركز عمليات.
+- حضور، إجازات، تنبيهات، وملخص مالي بسيط.
+- الموظف لا يرى مبالغ المالية.
+
+المقر لا يستبدل المحاسبة الكاملة ولا برامج المحادثة. هو المكان الذي تبدأ منه الشركة إدارة عملها.
