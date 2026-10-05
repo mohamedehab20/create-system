@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-cairo), "Cairo", "Segoe UI", sans-serif;
+  --color-brand: #2563eb;
+  --color-ink: #0f172a;
+  --color-muted: #5c6573;
+  --color-canvas: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-canvas);
+}
+
+::selection {
+  background: #dbe6ff;
+}

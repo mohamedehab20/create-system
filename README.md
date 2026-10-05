@@ -1,29 +1,24 @@
-//نظام اداره مكتبه
-void main() {
+# المقر
 
-var BOOK=Library();
-BOOK.book();
-print("------");
-BOOK.titlebook="يوتوبيا";
-BOOK.author="احمد خالد توفبق";
-BOOK.bookstorename="shorock store";
-BOOK.isbn="9770933074";
-print("book is available");
-print("book is name ${BOOK.titlebook}");
-print("name author ${BOOK.author}");
-print("name bookstorename ${BOOK.bookstorename}");
-print("isbn is ${BOOK.isbn}");
+مقر رقمي للشركات الصغيرة. مكان واحد للفريق، والمشاريع، والمهام، والحضور، والمالية الأساسية.
 
+الواجهة عربية ومن اليمين إلى اليسار.
 
-}
-class Library {
-  String titlebook ="";
-  String author="";
-  String bookstorename ="";
-  dynamic isbn ="";
+## التشغيل
 
- void book() {
-print ("${this.titlebook} copies available");
-  }
-}
+```bash
+npm install
+npm run dev
+```
 
+التطبيق يعمل على [http://localhost:3000](http://localhost:3000). البيانات تُحفظ محليًا في `data/maqr.sqlite`.
+
+```bash
+npm test
+```
+
+## حدود النسخة الأولى
+
+تشمل الشركة، والفريق، والأقسام، والأدوار، والمقر، والمشاريع، والمهام، والعمليات، واللوحة، والحضور، والإجازات، والتنبيهات، والتحديث المباشر، ومالية بسيطة.
+
+لا تشمل وكلاء الذكاء، ولا سوقًا، ولا محاسبة كاملة، ولا دردشة.
