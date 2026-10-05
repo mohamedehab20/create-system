@@ -1,29 +1,23 @@
-//نظام اداره مكتبه
-void main() {
+# Shorock
 
-var BOOK=Library();
-BOOK.book();
-print("------");
-BOOK.titlebook="يوتوبيا";
-BOOK.author="احمد خالد توفبق";
-BOOK.bookstorename="shorock store";
-BOOK.isbn="9770933074";
-print("book is available");
-print("book is name ${BOOK.titlebook}");
-print("name author ${BOOK.author}");
-print("name bookstorename ${BOOK.bookstorename}");
-print("isbn is ${BOOK.isbn}");
+A Next.js library desk for the records in the original sketch: title, author, bookstore, and ISBN, plus whether copies are still available.
 
+The sample shelf opens with **يوتوبيا** by أحمد خالد توفيق, held at Shorock Store, ISBN `9770933074`.
 
-}
-class Library {
-  String titlebook ="";
-  String author="";
-  String bookstorename ="";
-  dynamic isbn ="";
+## Run
 
- void book() {
-print ("${this.titlebook} copies available");
-  }
-}
+```bash
+npm install
+npm run dev
+```
 
+Open [http://localhost:3000](http://localhost:3000).
+
+## What you can do
+
+- See which titles are on the shelf and which are checked out
+- Search by title, author, bookstore, or ISBN
+- Add, edit, and remove a title
+- Check a title out and return it to the shelf
+
+Records stay in this browser (`localStorage`). Restock the sample shelf from the desk if you clear them.
